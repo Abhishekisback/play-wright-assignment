@@ -6,7 +6,7 @@ test("User Journey & PDP Validation", async ({ page }) => {
   await page.fill('[data-test="username"]', process.env.USER_NAME || "");
   await page.fill('[data-test="password"]', process.env.PASSWORD || "");
   await page.click('[data-test="login-button"]');
-  // Step 2: Click on product image for Sauce Labs Backpack
+  // Step 2: Click on product name  Sauce Labs Backpack
   await page
     .locator(".inventory_item")
     .filter({ hasText: "Sauce Labs Backpack" })
